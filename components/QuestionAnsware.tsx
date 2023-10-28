@@ -2,7 +2,7 @@ import Container from "./Container";
 
 const QuestionAnsware = () => {
   return (
-    <div className=" py-10 xl:py-14">
+    <div id="question_answare" className=" py-10 xl:py-14">
       <Container>
         <h2 className="text-center font-pacifico text-[3rem] xl:text-[6rem]">
           Q&A

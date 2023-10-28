@@ -1,36 +1,46 @@
+import {
+  image1,
+  image10,
+  image11,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+} from "@/assets";
+import Characters from "@/public/Characters@1-1920x1080-1.png";
 import Image from "next/image";
 import Container from "./Container";
-
 const PhotosGallery = () => {
   const imageList = [
-    "/1.png",
-    "/2.png",
-    "/3.png",
-    "/4.png",
-    "/5.png",
-    "/6.png",
-    "/7.png",
-    "/8.png",
-    "/9.png",
-    "/10.png",
-    "/11.png",
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
   ];
 
   return (
-    <div className=" pt-10">
+    <div id="photos" className=" pt-10">
       <Container>
-        <div className=" grid   grid-cols-12">
+        <div className=" grid   gap-y-10 grid-cols-12">
           <div className="order-last xl:order-first  col-span-12 xl:col-span-8">
             <div className=" columns-1  md:columns-2 xl:columns-3 gap-5 [&>img:not(:first-child)]:mt-5 [&>img:not(:first-child)]:rounded-lg">
               {imageList.map((image, index) => (
                 <Image
                   src={image}
                   alt="hero image"
-                  width={229}
                   key={index}
-                  className=" w-full "
-                  height={150}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className=" w-full h-full object-cover "
                 />
               ))}
             </div>
@@ -40,14 +50,13 @@ const PhotosGallery = () => {
               Photos
             </h2>
             <div className=" pt-5 xl:pt-10">
-              <Image
-                src={"/Characters@1-1920x1080-1.png"}
-                alt="hero image"
-                width={229}
-                className="block mx-auto"
-                height={150}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
+              <div className=" w-36 block mx-auto">
+                <Image
+                  src={Characters}
+                  alt="hero image"
+                  className=" w-full block mx-auto h-full object-cover "
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -54,9 +54,9 @@ const Counter = () => {
   }, [targetDate]);
   return (
     <div className=" bg-skin-darkbrown-50  rounded-[20px] px-5 py-14">
-      <div className="flex gap-10 items-center justify-center ">
+      <div className="flex gap-7  items-center  justify-between ">
         <div>
-          <h2 className="text-[4rem] text-center lg:text-[5.5rem] 2xl:text-[8rem]  font-pacifico  text-skin-darkbrown-900 leading-none">
+          <h2 className="text-[2.5rem] md:text-[4rem]  text-center lg:text-[5.5rem] 2xl:text-[8rem]  font-pacifico  text-skin-darkbrown-900 leading-none">
             {timeLeft.days}
           </h2>
           <h5 className="text-skin-darkbrown-800 text-center font-poppinss font-semibold">
@@ -64,7 +64,7 @@ const Counter = () => {
           </h5>
         </div>
         <div>
-          <h2 className="text-[4rem] text-center lg:text-[5.5rem] 2xl:text-[8rem]  font-pacifico  text-skin-darkbrown-900 leading-none">
+          <h2 className="text-[2.5rem] md:text-[4rem]  text-center lg:text-[5.5rem] 2xl:text-[8rem]  font-pacifico  text-skin-darkbrown-900 leading-none">
             {timeLeft.hours}
           </h2>
           <h5 className="text-skin-darkbrown-800 text-center font-poppinss font-semibold">
@@ -72,7 +72,7 @@ const Counter = () => {
           </h5>
         </div>
         <div>
-          <h2 className="text-[4rem] text-center lg:text-[5.5rem] 2xl:text-[8rem]  font-pacifico  text-skin-darkbrown-900 leading-none">
+          <h2 className="text-[2.5rem] md:text-[4rem]  text-center lg:text-[5.5rem] 2xl:text-[8rem]  font-pacifico  text-skin-darkbrown-900 leading-none">
             {timeLeft.minutes}
           </h2>
           <h5 className="text-skin-darkbrown-800 text-center font-poppinss font-semibold">
@@ -80,7 +80,7 @@ const Counter = () => {
           </h5>
         </div>
         <div>
-          <h2 className="text-[4rem] text-center lg:text-[5.5rem] 2xl:text-[8rem]  font-pacifico  text-skin-darkbrown-900 leading-none">
+          <h2 className="text-[2.5rem] md:text-[4rem]  text-center lg:text-[5.5rem] 2xl:text-[8rem]  font-pacifico  text-skin-darkbrown-900 leading-none">
             {timeLeft.seconds}
           </h2>
           <h5 className="text-skin-darkbrown-800 text-center font-poppinss font-semibold">
